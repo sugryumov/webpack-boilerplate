@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--font-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--font-family-heading);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+input,
+textarea {
+  padding: 0;
+
+  &::placeholder {
+    font-family: var(--font-family);
+    color: var(--font-color);
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--page-width);
+  box-sizing: border-box;
+}
+
+.image {
+  display: inline-block;
+  height: 230px;
+  width: 230px;
+  background-image: url('~assets/js-logo.svg');
+  background-size: cover;
+}
