@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { src, build, public } = require('./paths');
 
 module.exports = {
-  entry: [`${src}/index.js`],
+  entry: [`${src}/index.ts`],
 
   output: {
     path: build,
@@ -31,6 +31,12 @@ module.exports = {
     rules: [
       { test: /\.js$/, use: ['babel-loader'] },
 
+      {
+        test: /\.ts?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+
       { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource' },
 
       { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' },
@@ -39,7 +45,7 @@ module.exports = {
 
   resolve: {
     modules: [src, 'node_modules'],
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.js', '.ts', '.jsx', '.tsx', '.json'],
     alias: {
       '@': src,
       'assets': public,
