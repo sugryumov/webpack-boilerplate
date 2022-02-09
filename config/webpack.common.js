@@ -22,7 +22,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      favicon: `${public}/favicon.ico`,
+      favicon: `${src}/images/favicon.ico`,
       template: `${src}/index.html`,
     }),
   ],
