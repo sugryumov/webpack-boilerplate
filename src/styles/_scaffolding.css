@@ -56,11 +56,3 @@ textarea {
   max-width: var(--page-width);
   box-sizing: border-box;
 }
-
-.image {
-  display: inline-block;
-  height: 230px;
-  width: 230px;
-  background-image: url('~assets/js-logo.svg');
-  background-size: cover;
-}
