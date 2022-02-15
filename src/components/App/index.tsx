@@ -1,12 +1,10 @@
 import { IconCSS, IconJS, IconWebpack } from '../SVGIcon';
-import './index.css';
+import styles from './index.css';
 
 export const App = () => (
-  <div className="app">
-    <div className="container">
-      <IconJS />
-      <IconCSS />
-      <IconWebpack />
-    </div>
+  <div className={styles.app}>
+    <IconJS />
+    <IconCSS />
+    <IconWebpack />
   </div>
 );

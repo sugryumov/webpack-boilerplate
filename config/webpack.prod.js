@@ -28,7 +28,9 @@ module.exports = merge(common, {
             options: {
               importLoaders: 2,
               sourceMap: false,
-              modules: false,
+              modules: {
+                localIdentName: '[local]__[hash:base64:5]',
+              },
             },
           },
           'postcss-loader',

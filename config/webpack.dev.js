@@ -25,8 +25,9 @@ module.exports = merge(common, {
             loader: 'css-loader',
             options: {
               sourceMap: true,
-              importLoaders: 1,
-              modules: false,
+              modules: {
+                localIdentName: '[local]__[hash:base64:5]',
+              },
             },
           },
           {
