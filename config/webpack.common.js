@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -24,6 +25,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       favicon: `${src}/images/favicon.ico`,
       template: `${src}/index.html`,
+    }),
+
+    new webpack.WatchIgnorePlugin({
+      paths: [/css\.d\.ts$/],
     }),
   ],
 

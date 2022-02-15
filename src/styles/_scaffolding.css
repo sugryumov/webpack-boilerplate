@@ -50,9 +50,3 @@ textarea {
     color: var(--font-color);
   }
 }
-
-.container {
-  margin: 0 auto;
-  max-width: var(--page-width);
-  box-sizing: border-box;
-}

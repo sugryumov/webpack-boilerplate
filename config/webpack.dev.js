@@ -21,6 +21,7 @@ module.exports = merge(common, {
         test: /\.css$/i,
         use: [
           'style-loader',
+          '@teamsupercell/typings-for-css-modules-loader',
           {
             loader: 'css-loader',
             options: {
