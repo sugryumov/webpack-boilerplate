@@ -15,5 +15,5 @@
     "esModuleInterop": true
   },
 
-  "exclude": ["dist"]
+  "exclude": ["dist", "server"]
 }

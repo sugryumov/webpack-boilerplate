@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "typeMessage": "ISSUED",
+    "status": "IN_PROGRESS",
+    "number": "IGR01",
+    "typeGuarantee": "ELECTRONIC",
+    "fileName": "ESBG_01.xml",
+    "loadDate": "23.10.2021 17:50:32"
+  },
+  {
+    "id": 2,
+    "typeMessage": "ISSUED",
+    "status": "ERROR",
+    "number": "IGR02",
+    "typeGuarantee": "PAPPER",
+    "fileName": "ESBG_02.xml",
+    "loadDate": "28.11.2021 13:14:55"
+  },
+  {
+    "id": 3,
+    "typeMessage": "ISSUED",
+    "status": "PENDING",
+    "number": "IGR03",
+    "typeGuarantee": "ELECTRONIC",
+    "fileName": "ESBG_03.xml",
+    "loadDate": "01.02.2022 10:25:18"
+  }
+]
