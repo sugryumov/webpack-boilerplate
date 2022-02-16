@@ -3,9 +3,9 @@
     "browser": true,
     "es6": true
   },
-
-  "extends": ["eslint:recommended", "prettier"],
-  "plugins": ["prettier"],
+  "parser": "@typescript-eslint/parser",
+  "extends": ["plugin:react/recommended", "prettier"],
+  "plugins": ["@typescript-eslint", "prettier"],
 
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -31,6 +31,7 @@
     "no-nested-ternary": 1,
     "no-console": 1,
     "no-self-compare": 1,
-    "arrow-body-style": 1
+    "arrow-body-style": 1,
+    "react/react-in-jsx-scope": "off"
   }
 }
